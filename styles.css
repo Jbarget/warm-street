@@ -6,7 +6,7 @@ html, body, ul, p {
 
 .container {
   padding: 5%;
-  width: 76%;
+  /*width: 76%;*/
 }
 a:link {color: black;}      /* unvisited link */
 a:visited {color: black;}   /* visited link */
@@ -44,7 +44,7 @@ ul {
 
 .right-channel__projects {
   position: absolute;
-  top: 65%;
+  bottom: 5%;
   font-size: 0.8em;
 }
 
