@@ -1,7 +1,7 @@
 html, body, ul, p {
   margin: 0;
   padding: 0;
-  font-family: Helv, serif;;
+  font-family: serif;;
 }
 
 .container {
@@ -21,10 +21,6 @@ a:active {color: black;}    /* selected link */
 ul {
   list-style-type: none;
   cursor: pointer;
-}
-
-.right-channel {
-
 }
 
 .right-channel__logo {
@@ -96,9 +92,6 @@ ul {
     padding-left: 10%;
   }
 
-  .content__header {
-
-  }
   .content__header > h1 {
     font-size: 3.5em;
   }
