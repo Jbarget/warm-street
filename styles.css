@@ -1,13 +1,13 @@
 html, body, ul, p {
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: Helv, serif;;
 }
 
 .container {
-  padding: 5%;
-  /*width: 76%;*/
+  padding: 5% 10%;
 }
+
 a:link {color: black;}      /* unvisited link */
 a:visited {color: black;}   /* visited link */
 a:hover {color: black;}     /* mouse over link */
@@ -15,7 +15,7 @@ a:active {color: black;}    /* selected link */
 
 .right-channel__social-links {
   list-style-type: none;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 ul {
@@ -37,62 +37,103 @@ ul {
 }
 
 .right-channel__social-links {
-  width: 33%;
+  width: 25%;
   display: inline-block;
   float: right;
 }
 
-.right-channel__projects {
-  position: absolute;
-  bottom: 5%;
+.projects--desktop {
+ display: none;
+}
+
+.projects--mobile {
+  position: relative;
+  margin-top: 1em;
   font-size: 0.8em;
 }
 
+.content {
+  margin-top: 2em;
+}
+
+.content__header {
+  width: 80%;
+}
+
+
 .content__header > h1 {
-  font-size: 2.5em;
+  font-size: 4em;
   margin: 0;
 }
+
+@media (max-width: 320px) {
+  .content__header > h1 {
+    font-size: 3em;
+  }
+}
+
 .content__gif {
   margin-top: 1em;
 }
 
 .gif {
-  width: 60%;
+  width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
-  .content {
-    width: 66.67%;
-    display: inline-block;
+  .container {
+    padding: 3% 0;
   }
 
-  .content__header {
+  .content {
+    margin: 0;
+    margin-top: 2em;
     width: 75%;
     padding-left: 10%;
   }
 
-  .content__gif {
-    width: 65%;
-    padding-left: 10%;
+  .content__header {
+
+  }
+  .content__header > h1 {
+    font-size: 3.5em;
   }
 
+  .content__gif {
+    width: 80%;
+  }
 
+  .projects--desktop {
+    display: block;
+    margin-top: 2em;
+  }
+
+  .projects--mobile {
+    display: none;
+  }
 
   .gif {
-    width: 70%;
+    width: 100%;
+    left: inherit;
+    transform: none;
   }
 
   .right-channel {
     width: 20%;
-    display: inline-block;
+    display: flex;
     position: absolute;
     right: 0;
+    flex-direction: column;
   }
 
+  .right-channel__logo {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
   .right-channel__logo > img {
     width: 50%;
   }
