@@ -58,10 +58,6 @@ ul {
   margin-top: 2em;
 }
 
-.content__header {
-  width: 71%;
-}
-
 
 .content__header > h1 {
   font-size: 4em;
@@ -96,7 +92,7 @@ ul {
   }
 
   .content__header > h1 {
-    font-size: 4em;
+    font-size: 5vw;
   }
 
   .content__gif {
